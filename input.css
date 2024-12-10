@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.avatar {
+  @apply rounded-full w-7 h-7 ring-2;
+}
+
+.card {
+  @apply flex flex-col px-8 py-8 gap-3.5 rounded-lg;
+}

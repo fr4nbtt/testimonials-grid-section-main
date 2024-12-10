@@ -16,6 +16,7 @@ module.exports = {
       },
       fontSize: {
         body: "13px",
+        "2xs": "11px",
       },
       fontFamily: {
         barlow: ["Barlow Semi Condensed", "sans-serif"],
