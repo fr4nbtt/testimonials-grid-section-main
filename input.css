@@ -4,14 +4,7 @@
 
 /* Custom global styles */
 body {
-  @apply text-very-dark-blackish-blue text-body font-sans font-medium bg-light-grayish-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-main {
+  @apply text-very-dark-blackish-blue text-body font-sans font-medium bg-light-grayish-blue flex justify-center items-center h-full;
 }
 
 /* Custom components */

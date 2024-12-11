@@ -748,6 +748,10 @@ video {
 /* Custom global styles */
 
 body {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: hsl(210 46% 95% / var(--tw-bg-opacity));
   font-family: Barlow Semi Condensed, sans-serif;
@@ -755,13 +759,6 @@ body {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: hsl(219 29% 14% / var(--tw-text-opacity));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-main {
 }
 
 /* Custom components */
