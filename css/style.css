@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Barlow Semi Condensed, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -554,6 +554,62 @@ video {
   display: none;
 }
 
+.avatar {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 9999px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    gap: 0.75rem;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .flex {
   display: flex;
 }
@@ -566,24 +622,12 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-full {
   width: 100%;
 }
 
-.max-w-screen-sm {
-  max-width: 640px;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-xs {
-  max-width: 20rem;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .grid-cols-1 {
@@ -606,10 +650,6 @@ video {
   justify-content: center;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -618,19 +658,9 @@ video {
   row-gap: 1.75rem;
 }
 
-.bg-light-grayish-blue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(210 46% 95% / var(--tw-bg-opacity));
-}
-
 .bg-moderate-violet {
   --tw-bg-opacity: 1;
   background-color: hsl(263 55% 52% / var(--tw-bg-opacity));
-}
-
-.bg-orange-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
 }
 
 .bg-very-dark-blackish-blue {
@@ -653,26 +683,13 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.font-barlow {
-  font-family: Barlow Semi Condensed, sans-serif;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .text-2xs {
   font-size: 11px;
-}
-
-.text-body {
-  font-size: 13px;
 }
 
 .text-lg {
@@ -701,14 +718,23 @@ video {
   opacity: 0.7;
 }
 
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.ring-gray-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
+}
+
 .ring-purple-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(192 132 252 / var(--tw-ring-opacity));
 }
 
-.ring-violet-600 {
+.ring-white {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(124 58 237 / var(--tw-ring-opacity));
+  --tw-ring-color: hsl(0 0% 100% / var(--tw-ring-opacity));
 }
 
 .transition {
@@ -719,45 +745,38 @@ video {
   transition-duration: 150ms;
 }
 
-.avatar {
-  height: 1.75rem;
-  width: 1.75rem;
-  border-radius: 9999px;
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+/* Custom global styles */
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: hsl(210 46% 95% / var(--tw-bg-opacity));
+  font-family: Barlow Semi Condensed, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: hsl(219 29% 14% / var(--tw-text-opacity));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.875rem;
-  border-radius: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+main {
 }
+
+/* Custom components */
 
 @media (min-width: 768px) {
+  .md\:right-20 {
+    right: 5rem;
+  }
+
   .md\:order-3 {
     order: 3;
   }
 
-  .md\:order-2 {
-    order: 2;
-  }
-
-  .md\:order-1 {
-    order: 1;
-  }
-
   .md\:order-4 {
     order: 4;
-  }
-
-  .md\:order-5 {
-    order: 5;
   }
 
   .md\:col-span-2 {

@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.avatar {
-  @apply rounded-full w-7 h-7 ring-2;
+/* Custom global styles */
+body {
+  @apply text-very-dark-blackish-blue text-body font-sans font-medium bg-light-grayish-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.card {
-  @apply flex flex-col px-8 py-8 gap-3.5 rounded-lg;
+main {
+}
+
+/* Custom components */
+@layer components {
+  .avatar {
+    @apply rounded-full w-7 h-7 ring-2 md:w-8 md:h-8;
+  }
+
+  .card {
+    @apply flex flex-col justify-around px-8 py-7 gap-4 rounded-lg h-full w-full md:gap-3;
+  }
 }

@@ -19,7 +19,7 @@ module.exports = {
         "2xs": "11px",
       },
       fontFamily: {
-        barlow: ["Barlow Semi Condensed", "sans-serif"],
+        sans: ["Barlow Semi Condensed", "sans-serif"],
       },
       fontWeight: {
         medium: 500,
@@ -42,4 +42,24 @@ Note for text colors:
 1. "Verified Graduate" has the same color as the person's name with 50% opacity
 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
 
+*/
+
+/* @type {import('tailwindcss').Config} 
+module.exports = {
+  content: ["./*.html"],
+  screens: {
+    sm: "480px",
+    md: "768px",
+    lg: "976px",
+    xl: "1440px",
+  },
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Barlow Semi Condensed", "sans-serif"],
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/line-clamp")],
+}
 */

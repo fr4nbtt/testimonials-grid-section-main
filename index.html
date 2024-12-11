@@ -10,34 +10,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
+    <title>Testimonial Grid Section</title>
   </head>
-  <body class="text-body font-barlow">
-    <main class="bg-light-grayish-blue h-full px-6 py-16">
+  <body>
+    <!-- Main Container -->
+    <main class="max-w-6xl px-6 py-20">
+      <!-- Grid Container -->
       <section
-        class="testimonials-grid bg-orange-200 h-scren w-full grid grid-cols-1 gap-y-7 md:grid-cols-4 md:grid-rows-2 md:gap-x-6"
+        class="h-full w-full grid grid-cols-1 gap-y-7 md:grid-cols-4 md:grid-rows-2 md:gap-x-6"
       >
-        <article
-          class="card bg-moderate-violet w-full h-full md:col-span-2 md:order-1"
-        >
-          <div class="flex-container flex gap-4 items-center justify-start">
+        <!-- Testimonial 1 -->
+        <article class="card relative bg-moderate-violet md:col-span-2">
+          <!-- Double Quotes Image -->
+          <img
+            src="images/bg-pattern-quotation.svg"
+            alt=""
+            class="absolute top-0 right-6 md:right-20"
+          />
+          <!-- Testimonial Header -->
+          <header class="flex gap-4 items-center justify-start">
             <img
               src="images/image-daniel.jpg"
               alt=""
               class="avatar ring-purple-400"
             />
             <div class="text-content flex flex-col justify-center">
-              <p class="leading-tight text-white">Daniel Clifford</p>
+              <p class="leading-tight text-white opacity-90">Daniel Clifford</p>
               <p class="text-2xs leading-tight text-white opacity-50">
                 Verified Graduate
               </p>
             </div>
-          </div>
-          <h2 class="text-white text-lg font-semibold">
+          </header>
+          <!-- Large Text -->
+          <h2 class="text-white text-lg font-semibold z-10">
             I received a job offer mid-course, and the subjects I learned were
             current, if not more so, in the company I joined. I honestly feel I
             got every penny's worth.
           </h2>
+          <!-- Small Text -->
           <p class="text-white opacity-70">
             "I was an EMT for many years before I joined the bootcamp. I've been
             looking to make a transition and have heard some people who had an
@@ -48,57 +58,87 @@
             as a Software Engineer at a VR startup. "
           </p>
         </article>
-        <article
-          class="card bg-very-dark-grayish-blue w-full h-full px-6 py-8 md:order-2"
-        >
-          <div class="flex-container flex">
-            <img src="images/image-jonathan.jpg" alt="" class="avatar" />
-            <div class="text-content">
-              <p>Jonathan Walters</p>
-              <p>Verified Graduate</p>
+        <!-- Testimonial 2 -->
+        <article class="card bg-very-dark-grayish-blue">
+          <!-- Testimonial Header -->
+          <header class="flex gap-4 items-center justify-start">
+            <img
+              src="images/image-jonathan.jpg"
+              alt=""
+              class="avatar ring-gray-400"
+            />
+            <div class="text-content flex flex-col justify-center">
+              <h4 class="leading-tight text-white opacity-90">
+                Jonathan Walters
+              </h4>
+              <p class="text-2xs leading-tight text-white opacity-50">
+                Verified Graduate
+              </p>
             </div>
-          </div>
-          <h2>The team was very supportive and kept me motivated</h2>
-          <p>
+          </header>
+          <!-- Large Text -->
+          <h2 class="text-white text-lg font-semibold">
+            The team was very supportive and kept me motivated
+          </h2>
+          <!-- Small Text -->
+          <p class="text-white opacity-70">
             "I started as a total newbie with virtually no coding skills. I now
             work as a mobile engineer for a big company. This was one of the
             best investments I've made in myself. "
           </p>
         </article>
-        <article class="card bg-white w-full h-full px-6 py-8 md:order-4">
-          <div class="flex-container flex">
-            <img src="images/image-jeanette.jpg" alt="" class="avatar" />
-            <div class="text-content">
-              <p>Jeanette Harmon</p>
-              <p>Verified Graduate</p>
+        <!-- Testimonial 3 -->
+        <article class="card bg-white md:order-4">
+          <!-- Testimonial Header -->
+          <header class="flex gap-4 items-center justify-start">
+            <img
+              src="images/image-jeanette.jpg"
+              alt=""
+              class="avatar ring-white"
+            />
+            <div class="text-content flex flex-col justify-center">
+              <h4 class="leading-tight opacity-90">Jeanette Hamon</h4>
+              <p class="text-2xs leading-tight opacity-50">Verified Graduate</p>
             </div>
-          </div>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>
+          </header>
+          <!-- Large Text -->
+          <h2 class="text-lg font-semibold">
+            A wonderful overall wonderful and rewarding experience
+          </h2>
+          <!-- Small Text -->
+          <p class="opacity-70">
             "Thank you for the wonderful experience! I now have a job I really
             enjoy, and make a good living while doing something I love. "
           </p>
         </article>
+        <!-- Testimonial 4 -->
         <article
-          class="card bg-very-dark-blackish-blue w-full h-full px-6 py-8 md:order-5"
+          class="card bg-very-dark-blackish-blue md:col-span-2 md:order-4"
         >
-          <div class="flex-container flex">
+          <!-- Testimonial Header -->
+          <header class="flex gap-4 items-center justify-start">
             <img
               src="images/image-patrick.jpg"
               alt=""
-              class="avatar ring-violet-600"
+              class="avatar ring-purple-400"
             />
-            <div class="text-content">
-              <p>Patrick Abrams</p>
-              <p>Verified Graduate</p>
+            <div class="text-content flex flex-col justify-center">
+              <h4 class="leading-tight text-white opacity-90">
+                Patrick Abrahms
+              </h4>
+              <p class="text-2xs leading-tight text-white opacity-50">
+                Verified Graduate
+              </p>
             </div>
-          </div>
-          <h2>
+          </header>
+          <!-- Large Text -->
+          <h2 class="text-white text-lg font-semibold">
             Awesome teaching support from TAs who did the bootcamp themselves.
             Getting guidance from them and learning from their experiences was
             easy.
           </h2>
-          <p>
+          <!-- Small Text -->
+          <p class="text-white opacity-70">
             "The staff seem genuinely concerned about my progress which I find
             really refreshing. The program gave me the confidence necessary to
             be able to go out in the world and present myself as a capable
@@ -107,18 +147,22 @@
             and amazing people. "
           </p>
         </article>
-        <article
-          class="card bg-white w-full h-full px-6 py-8 md:order-3 md:row-span-2"
-        >
-          <div class="flex-container flex gap-2">
-            <img src="images/image-kira.jpg" alt="" class="avatar" />
-            <div class="text-content">
-              <p>Kira Whittle</p>
-              <p>Verified Graduate</p>
+        <!-- Testimonial 5 -->
+        <article class="card bg-white md:row-span-2 md:order-3">
+          <!-- Testimonial Header -->
+          <header class="flex gap-4 items-center justify-start">
+            <img src="images/image-kira.jpg" alt="" class="avatar ring-white" />
+            <div class="text-content flex flex-col justify-center">
+              <h4 class="leading-tight opacity-90">Kira Whittle</h4>
+              <p class="text-2xs leading-tightopacity-50">Verified Graduate</p>
             </div>
-          </div>
-          <h2>Such a life-changing experience. Highly recommend!</h2>
-          <p>
+          </header>
+          <!-- Large Text -->
+          <h2 class="text-lg font-semibold">
+            Such a life-changing experience. Highly recommend!
+          </h2>
+          <!-- Small Text -->
+          <p class="opacity-70">
             "Before joining the bootcamp, I've never written a line of code. I
             needed some structure from professionals who can help me learn
             programming step by step. I was encouraged to enroll by a former
